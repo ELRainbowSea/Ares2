@@ -4,13 +4,13 @@ import java.awt.Container;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
-
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+
+import com.sun.awt.AWTUtilities;
 
 /**
  * 开始游戏窗口
@@ -33,9 +33,11 @@ public class StartGameWindow extends JFrame{
 		//取消窗体边框
 		frame.setUndecorated(true);
 		
+		//用于设置不规则窗体，将frame窗体背景设置为透明
+		AWTUtilities.setWindowOpaque(frame, false);
 		
 		//背景图片设置
-		ImageIcon backPic=new ImageIcon("graphics/bg01.jpg");
+		ImageIcon backPic=new ImageIcon("graphics/picture/bg.png");
 		JLabel backPicLabel=new JLabel(backPic);
 		frame.getLayeredPane().add(backPicLabel,new Integer(Integer.MIN_VALUE));
 		backPicLabel.setBounds(0, 0, backPic.getIconWidth(), backPic.getIconHeight());
@@ -43,18 +45,18 @@ public class StartGameWindow extends JFrame{
 		cp.setLayout(null);
 		
 		//按钮设置
-		ImageIcon startPic=new ImageIcon("graphics/start.png");
-		ImageIcon helpPic=new ImageIcon("graphics/help.png");
-		ImageIcon aboutPic=new ImageIcon("graphics/about.png");
-		ImageIcon exitPic=new ImageIcon("graphics/exit.png");
+		ImageIcon startPic=new ImageIcon("graphics/picture/start.png");
+		ImageIcon helpPic=new ImageIcon("graphics/picture/help.png");
+		ImageIcon aboutPic=new ImageIcon("graphics/picture/about.png");
+		ImageIcon exitPic=new ImageIcon("graphics/picture/exit.png");
 		JButton startjb=new JButton(startPic);
 		JButton helpjb=new JButton(helpPic);
 		JButton aboutjb=new JButton(aboutPic);
 		JButton exitjb=new JButton(exitPic);
-		startjb.setBounds((backPic.getIconWidth()-startPic.getIconWidth())/2, 90, startPic.getIconWidth(), startPic.getIconHeight()-50);
-		helpjb.setBounds((backPic.getIconWidth()-helpPic.getIconWidth())/2, 160, helpPic.getIconWidth(), helpPic.getIconHeight()-50);
-		aboutjb.setBounds((backPic.getIconWidth()-aboutPic.getIconWidth())/2, 230, aboutPic.getIconWidth(), aboutPic.getIconHeight()-50);
-		exitjb.setBounds((backPic.getIconWidth()-exitPic.getIconWidth())/2, 300, exitPic.getIconWidth(), exitPic.getIconHeight()-50);
+		startjb.setBounds((backPic.getIconWidth()-startPic.getIconWidth())/2, 235, startPic.getIconWidth(), startPic.getIconHeight()-50);
+		helpjb.setBounds((backPic.getIconWidth()-helpPic.getIconWidth())/2, 305, helpPic.getIconWidth(), helpPic.getIconHeight()-50);
+		aboutjb.setBounds((backPic.getIconWidth()-aboutPic.getIconWidth())/2, 375, aboutPic.getIconWidth(), aboutPic.getIconHeight()-50);
+		exitjb.setBounds((backPic.getIconWidth()-exitPic.getIconWidth())/2, 445, exitPic.getIconWidth(), exitPic.getIconHeight()-50);
 		//设置按钮背景透明
 		startjb.setContentAreaFilled(false);
 		helpjb.setContentAreaFilled(false);

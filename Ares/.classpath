@@ -2,8 +2,9 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
-	<classpathentry kind="lib" path="C:/JMF/lib/jmf.jar"/>
-	<classpathentry kind="lib" path="C:/JMF/lib/mediaplayer.jar"/>
-	<classpathentry kind="lib" path="C:/JMF/lib/sound.jar"/>
+	<classpathentry kind="lib" path="F:/el/Ares/jarTools/rt.jar"/>
+	<classpathentry kind="lib" path="F:/el/Ares/jarTools/JMF/lib/jmf.jar"/>
+	<classpathentry kind="lib" path="F:/el/Ares/jarTools/JMF/lib/mediaplayer.jar"/>
+	<classpathentry kind="lib" path="F:/el/Ares/jarTools/JMF/lib/sound.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

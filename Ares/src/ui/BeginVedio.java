@@ -53,7 +53,7 @@ public class BeginVedio extends JFrame{
 		//µÃµ½´°¿ÚÈÝÆ÷   
 		container = getContentPane();
 		
-		mediaFile=new File("F:/el/Area/media/Begin.avi");
+		mediaFile=new File("graphics/media/Begin.avi");
 		try {
 			fileURL=mediaFile.toURL();
 			startPlayer(fileURL.toString());

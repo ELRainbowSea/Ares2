@@ -38,7 +38,7 @@ public class HelpWindow extends JDialog{
 		
 		
 		//将需要显示的内容做成图片格式放在button上
-		ImageIcon image=new ImageIcon("graphics/helpWindow.png");
+		ImageIcon image=new ImageIcon("graphics/picture/helpWindow.png");
 		JButton button=new JButton(image);
 		button.setSize(getWidth(), getHeight());
 		button.setContentAreaFilled(false);

@@ -13,7 +13,7 @@ public class SelectWindowBackMusicPlay extends Thread{
 	public void run() {
 		while(true){
 			//装入声音
-			BackMusic sound=new BackMusic("music/Nostalgia.wav");
+			BackMusic sound=new BackMusic("graphics/music/Nostalgia.wav");
 			//生成要播放的流
 			InputStream stream=new ByteArrayInputStream(sound.getSamples());
 			//播放声音

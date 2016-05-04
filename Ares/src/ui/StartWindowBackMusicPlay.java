@@ -13,7 +13,7 @@ public class StartWindowBackMusicPlay extends Thread{
 	public void run() {
 		while(true){
 			//装入声音
-			BackMusic sound=new BackMusic("music/Breath and Life.wav");
+			BackMusic sound=new BackMusic("graphics/music/Breath and Life.wav");
 			//生成要播放的流
 			InputStream stream=new ByteArrayInputStream(sound.getSamples());
 			//播放声音
